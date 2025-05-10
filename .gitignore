@@ -1,41 +1,14 @@
-# Node/Nuxt/Next/React build and temp files
-node_modules/
-dist/
-.next/
-out/
-coverage/
-.cache/
+# dependencies
+/node_modules
 
-# Env files
-.env
-.env.*
+# Next.js build output
+/.next
+/out
 
-# System files
+# misc
 .DS_Store
-Thumbs.db
-
-# Log files
-*.log
-
-# Misc
+.env*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-
-# VSCode
-.vscode/
-
-# Mac system
-.AppleDouble
-.LSOverride
-Icon?
-
-# Other
-*.swp
-*.swo
-
-# Ignore local build artifacts
-build/
-.tmp/
-.temp/

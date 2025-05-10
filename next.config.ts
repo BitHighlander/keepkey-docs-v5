@@ -4,7 +4,7 @@ import nextra from 'nextra'
 const withNextra = nextra({
   defaultShowCopyCode: true,
   latex: true,
-  contentDirBasePath: '/content'
+  contentDirBasePath: '/'
 })
 
 const withBundleAnalyzer = bundleAnalyzer({
@@ -48,7 +48,14 @@ const nextConfig = withBundleAnalyzer(
       })
       return config
     },
-    
+    turbopack: {
+      rules: {
+        './app/_icons/*.svg': {
+          loaders: ['@svgr/webpack'],
+          as: '*.js'
+        }
+      }
+    },
     experimental: {
       optimizePackageImports: [
         // '@app/_icons'
